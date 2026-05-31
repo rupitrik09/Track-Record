@@ -1150,6 +1150,22 @@
             }
         }
 
+
+        /* REAL PHONE LANDING IMAGE ONLY - PC / DESKTOP UNCHANGED */
+        @media (max-width: 768px) and (hover: none) and (pointer: coarse) {
+            #home > img.hero-mobile-bg {
+                content: url("phero.png") !important;
+                width: 100% !important;
+                height: 100svh !important;
+                object-fit: cover !important;
+                object-position: center center !important;
+            }
+
+            #home > div {
+                display: none !important;
+            }
+        }
+
         /* SCROLL REVEAL ANIMATIONS */
         [data-reveal] {
             opacity: 0;
@@ -1298,7 +1314,7 @@
 
     <!-- PAGE 1 - HERO -->
     <div id="home" style="position:relative;">
-        <img src="hero.png">
+        <img class="hero-mobile-bg" src="hero.png">
         <div style="position:absolute; top:190px; left:50%; transform:translateX(-50%); z-index:10; padding:14px 55px; border-radius:50px; border:1px solid rgba(255, 255, 255, 0.105); background:rgba(245, 245, 245, 0.034); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(30px); box-shadow:inset 0 1.5px 0 rgba(255,255,255,0.35), 0 4px 24px rgba(0,0,0,0.25); color:rgba(255,255,255,0.95); font-size:14px; letter-spacing:0.25em; text-transform:uppercase; font-family:Arial,sans-serif; display:flex; align-items:center; gap:10px; transition:all 0.4s ease;"
         onmouseover="this.style.transform='translateX(-50%) scale(1.06)'; this.style.background='rgba(255,255,255,0.15)';"
         onmouseout="this.style.transform='translateX(-50%) scale(1)'; this.style.background='rgba(255,255,255,0.08)';">
